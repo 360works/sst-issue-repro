@@ -1,0 +1,10 @@
+{
+  "name": "@sst-issue-repro/functions",
+  "version": "0.0.0",
+  "dependencies": {
+    "@sst-issue-repro/core": "*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137"
+  }
+}

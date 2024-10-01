@@ -1,0 +1,1032 @@
+{
+  "id": "f55afcde-55f0-4111-b455-9807faee6919",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.application": {
+      "name": "application",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "userID": {
+          "name": "userID",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "JobNum": {
+          "name": "JobNum",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Status": {
+          "name": "Status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "SubmittedDate": {
+          "name": "SubmittedDate",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "JobType": {
+          "name": "JobType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "SharedCompanyName": {
+          "name": "SharedCompanyName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedAttn": {
+          "name": "SharedAttn",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedAddress": {
+          "name": "SharedAddress",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedCity": {
+          "name": "SharedCity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedState": {
+          "name": "SharedState",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedZip": {
+          "name": "SharedZip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedPhone": {
+          "name": "SharedPhone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedCell": {
+          "name": "SharedCell",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedEmail": {
+          "name": "SharedEmail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApEngineeringContact": {
+          "name": "UtilApEngineeringContact",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApEngineeringEmail": {
+          "name": "UtilApEngineeringEmail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApEngineeringPhone": {
+          "name": "UtilApEngineeringPhone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApEngineeringCell": {
+          "name": "UtilApEngineeringCell",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApStartDate": {
+          "name": "UtilApStartDate",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilApEndDate": {
+          "name": "UtilApEndDate",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "IncidentPhone": {
+          "name": "IncidentPhone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedScopeProjectName": {
+          "name": "SharedScopeProjectName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilType1": {
+          "name": "UtilType1",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilType2": {
+          "name": "UtilType2",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilType3": {
+          "name": "UtilType3",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipeBridge": {
+          "name": "UtilPipeBridge",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilTypeNumOfCarriers": {
+          "name": "UtilTypeNumOfCarriers",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocCity": {
+          "name": "SharedLocCity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocCounty": {
+          "name": "SharedLocCounty",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocState": {
+          "name": "SharedLocState",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocSection": {
+          "name": "SharedLocSection",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocTownship": {
+          "name": "SharedLocTownship",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocRange": {
+          "name": "SharedLocRange",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilLocStreetName": {
+          "name": "UtilLocStreetName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocBridgeCenterlineNearestCrossing": {
+          "name": "SharedLocBridgeCenterlineNearestCrossing",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocDodtNo": {
+          "name": "SharedLocDodtNo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocRRSubdivision": {
+          "name": "SharedLocRRSubdivision",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocLatitude": {
+          "name": "SharedLocLatitude",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocLongitude": {
+          "name": "SharedLocLongitude",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilLocAocDegrees": {
+          "name": "UtilLocAocDegrees",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocCrossMilePost": {
+          "name": "SharedLocCrossMilePost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocParallelBegMilePost": {
+          "name": "SharedLocParallelBegMilePost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocSpurDist": {
+          "name": "SharedLocSpurDist",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilLocDistBridge": {
+          "name": "UtilLocDistBridge",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilLocBridgeMP": {
+          "name": "UtilLocBridgeMP",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineRadioOption": {
+          "name": "UtilWireLineRadioOption",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLinePowerLineVoltage": {
+          "name": "UtilWireLinePowerLineVoltage",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineOtherDetails": {
+          "name": "UtilWireLineOtherDetails",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineInnerductCt": {
+          "name": "UtilWireLineInnerductCt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineFibersCt": {
+          "name": "UtilWireLineFibersCt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipeLineVerticalClearance": {
+          "name": "UtilPipeLineVerticalClearance",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLinePolesOnRRProp": {
+          "name": "UtilWireLinePolesOnRRProp",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLinePolesHorzDistFromNearestTrack": {
+          "name": "UtilWireLinePolesHorzDistFromNearestTrack",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLinePolesDistance": {
+          "name": "UtilWireLinePolesDistance",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierDepthBelowBaseRail": {
+          "name": "UtilWireLineCarrierDepthBelowBaseRail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierDepthBelowBottom": {
+          "name": "UtilWireLineCarrierDepthBelowBottom",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VarianceWirelineCarrier": {
+          "name": "VarianceWirelineCarrier",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierWireLength": {
+          "name": "UtilWireLineCarrierWireLength",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierUndergroundParallel": {
+          "name": "UtilWireLineCarrierUndergroundParallel",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierPipeInsideDia": {
+          "name": "UtilWireLineCarrierPipeInsideDia",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierPipeWallThickness": {
+          "name": "UtilWireLineCarrierPipeWallThickness",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierPipeMaterial": {
+          "name": "UtilWireLineCarrierPipeMaterial",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierMinYieldPt": {
+          "name": "UtilWireLineCarrierMinYieldPt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilWireLineCarrierJointType": {
+          "name": "UtilWireLineCarrierJointType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCommodity": {
+          "name": "UtilPipelineCommodity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PipelineTransmission": {
+          "name": "PipelineTransmission",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineTranOtherDesc": {
+          "name": "UtilPipelineTranOtherDesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PipelineCommodityState": {
+          "name": "PipelineCommodityState",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PipelineCommodityFlammable": {
+          "name": "PipelineCommodityFlammable",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PipelineCommodityProperties": {
+          "name": "PipelineCommodityProperties",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineTypeOtherDetails": {
+          "name": "UtilPipelineTypeOtherDetails",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineTypeDetails": {
+          "name": "UtilPipelineTypeDetails",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierDepthBelowBase": {
+          "name": "UtilPipelineCarrierDepthBelowBase",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierDepthBelowBottom": {
+          "name": "UtilPipelineCarrierDepthBelowBottom",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VariancePipelineCarrier": {
+          "name": "VariancePipelineCarrier",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierLength": {
+          "name": "UtilPipelineCarrierLength",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierUndergroundParallel": {
+          "name": "UtilPipelineCarrierUndergroundParallel",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierInsideDia": {
+          "name": "UtilPipelineCarrierInsideDia",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierWallThick": {
+          "name": "UtilPipelineCarrierWallThick",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierMaterial": {
+          "name": "UtilPipelineCarrierMaterial",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierMinYieldPt": {
+          "name": "UtilPipelineCarrierMinYieldPt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierJointType": {
+          "name": "UtilPipelineCarrierJointType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierMaxOperPressure": {
+          "name": "UtilPipelineCarrierMaxOperPressure",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineHydrostaticPressure": {
+          "name": "UtilPipelineHydrostaticPressure",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineProtectiveCoating": {
+          "name": "UtilPipelineProtectiveCoating",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierProtectiveCoatingType": {
+          "name": "UtilPipelineCarrierProtectiveCoatingType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCarrierCathodicallyProtected": {
+          "name": "UtilPipelineCarrierCathodicallyProtected",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CasingPipeline": {
+          "name": "CasingPipeline",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingDepthBelowBase": {
+          "name": "UtilPipelineCasingDepthBelowBase",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingDepthBelowBottom": {
+          "name": "UtilPipelineCasingDepthBelowBottom",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VariancePipelineCasing": {
+          "name": "VariancePipelineCasing",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingLength": {
+          "name": "UtilPipelineCasingLength",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingUndergroundParallel": {
+          "name": "UtilPipelineCasingUndergroundParallel",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingInsideDia": {
+          "name": "UtilPipelineCasingInsideDia",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingWallThick": {
+          "name": "UtilPipelineCasingWallThick",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingMaterial": {
+          "name": "UtilPipelineCasingMaterial",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingMinYieldPt": {
+          "name": "UtilPipelineCasingMinYieldPt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingJointType": {
+          "name": "UtilPipelineCasingJointType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingMaxOperPressure": {
+          "name": "UtilPipelineCasingMaxOperPressure",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingProtectiveCoat": {
+          "name": "UtilPipelineCasingProtectiveCoat",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingProtectiveCoatType": {
+          "name": "UtilPipelineCasingProtectiveCoatType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineCasingCathodicallyProtected": {
+          "name": "UtilPipelineCasingCathodicallyProtected",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineVented": {
+          "name": "UtilPipelineVented",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPiplineVentedDiameter": {
+          "name": "UtilPiplineVentedDiameter",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineVentedCount": {
+          "name": "UtilPipelineVentedCount",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilPipelineVentedHeightAboveGround": {
+          "name": "UtilPipelineVentedHeightAboveGround",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilMoiPick": {
+          "name": "UtilMoiPick",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilMoiOtherDesc": {
+          "name": "UtilMoiOtherDesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilExistingAgreement": {
+          "name": "UtilExistingAgreement",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocPastAgreement": {
+          "name": "SharedDocPastAgreement",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilExistingAgreeNum": {
+          "name": "UtilExistingAgreeNum",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilExistingDate": {
+          "name": "UtilExistingDate",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ExistingAgreementType": {
+          "name": "ExistingAgreementType",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilExistingOtherDesc": {
+          "name": "UtilExistingOtherDesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReq": {
+          "name": "UtilKcsReq",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqServiceToBuilding": {
+          "name": "UtilKcsReqServiceToBuilding",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqServiceToSwitch": {
+          "name": "UtilKcsReqServiceToSwitch",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqServiceToSignal": {
+          "name": "UtilKcsReqServiceToSignal",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqServiceOther": {
+          "name": "UtilKcsReqServiceOther",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqServiceOtherDesc": {
+          "name": "UtilKcsReqServiceOtherDesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqContact": {
+          "name": "UtilKcsReqContact",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqContactPhone": {
+          "name": "UtilKcsReqContactPhone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqContactEmail": {
+          "name": "UtilKcsReqContactEmail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqProjectName": {
+          "name": "UtilKcsReqProjectName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UtilKcsReqAfeNumber": {
+          "name": "UtilKcsReqAfeNumber",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedSignaturePrinted": {
+          "name": "SharedSignaturePrinted",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedSignatureTitle": {
+          "name": "SharedSignatureTitle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedSignatureDate": {
+          "name": "SharedSignatureDate",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocDrawing1": {
+          "name": "SharedDocDrawing1",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocDrawing2": {
+          "name": "SharedDocDrawing2",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocDrawing3": {
+          "name": "SharedDocDrawing3",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocDrawing4": {
+          "name": "SharedDocDrawing4",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedDocDrawing5": {
+          "name": "SharedDocDrawing5",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeDimensionA": {
+          "name": "RoeScopeDimensionA",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeDimensionB": {
+          "name": "RoeScopeDimensionB",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopePeriodFrom": {
+          "name": "RoeScopePeriodFrom",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopePeriodTo": {
+          "name": "RoeScopePeriodTo",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeBridge": {
+          "name": "RoeScopeTypeBridge",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeRoadResurface": {
+          "name": "RoeScopeTypeRoadResurface",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeSurvey": {
+          "name": "RoeScopeTypeSurvey",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeDrainage": {
+          "name": "RoeScopeTypeDrainage",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeUtility": {
+          "name": "RoeScopeTypeUtility",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeInspection": {
+          "name": "RoeScopeTypeInspection",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeOther": {
+          "name": "RoeScopeTypeOther",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopeTypeOtherDesc": {
+          "name": "RoeScopeTypeOtherDesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeScopePurpose": {
+          "name": "RoeScopePurpose",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocCrossMilePostPlusFt": {
+          "name": "SharedLocCrossMilePostPlusFt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocParallelBegMilePostPlusFt": {
+          "name": "SharedLocParallelBegMilePostPlusFt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocParallelEndMilePost": {
+          "name": "SharedLocParallelEndMilePost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SharedLocParallelEndMilePostPlusFt": {
+          "name": "SharedLocParallelEndMilePostPlusFt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeLocWithin25Ft": {
+          "name": "RoeLocWithin25Ft",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeLocCrossingReq": {
+          "name": "RoeLocCrossingReq",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeLocCrossingReqMilePost": {
+          "name": "RoeLocCrossingReqMilePost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "RoeLocCrossingReqMilePostPlusFt": {
+          "name": "RoeLocCrossingReqMilePostPlusFt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "application_userID_user_id_fk": {
+          "name": "application_userID_user_id_fk",
+          "tableFrom": "application",
+          "tableTo": "user",
+          "columnsFrom": [
+            "userID"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.user": {
+      "name": "user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "cognitoEmail": {
+          "name": "cognitoEmail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "firstName": {
+          "name": "firstName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lastName": {
+          "name": "lastName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "company": {
+          "name": "company",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "contactEmail": {
+          "name": "contactEmail",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cellPhone": {
+          "name": "cellPhone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "user_cognitoEmail_unique": {
+          "name": "user_cognitoEmail_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "cognitoEmail"
+          ]
+        }
+      }
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

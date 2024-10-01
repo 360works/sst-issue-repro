@@ -1,0 +1,36 @@
+{
+  "name": "sst-issue-repro",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "AWS_PROFILE=JLL sst dev --mode basic --verbose",
+    "unlock": "AWS_PROFILE=JLL sst unlock --stage staging",
+    "db:studio": "AWS_PROFILE=JLL sst shell drizzle-kit studio",
+    "db_generate": "AWS_PROFILE=JLL sst shell drizzle-kit generate",
+    "db_migrate_dev": "AWS_PROFILE=JLL sst shell drizzle-kit migrate",
+    "db_migrate_staging": "AWS_PROFILE=JLL sst shell --stage staging drizzle-kit migrate",
+    "db_migrate_prod": "AWS_PROFILE=JLL sst shell --stage prod drizzle-kit migrate",
+    "deploy_staging": "AWS_PROFILE=JLL sst deploy --stage staging",
+    "deploy_prod": "AWS_PROFILE=JLL sst deploy --stage prod",
+    "refresh": "AWS_PROFILE=JLL sst refresh",
+    "remove_dev": "AWS_PROFILE=JLL sst remove --stage will",
+    "remove_prod": "AWS_PROFILE=JLL sst remove --stage prod",
+    "remove_staging": "AWS_PROFILE=JLL sst remove --stage staging",
+    "unlock_dev": "AWS_PROFILE=JLL sst unlock --stage josh",
+    "unlock_staging": "AWS_PROFILE=JLL sst unlock --stage staging"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "^3.659.0",
+    "drizzle-kit": "^0.24.2",
+    "drizzle-orm": "^0.33.0",
+    "sst": "^3.1.46"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@sst-issue-repro/core",
+  "version": "0.0.0",
+  "exports": {
+    "./*": [
+      "./src/*/index.ts",
+      "./src/*.ts"
+    ]
+  },
+  "dependencies": {
+    "emitter": "^0.0.5",
+    "html-pdf-node": "^1.0.8",
+    "tslog": "^4.9.3"
+  },
+  "devDependencies": {}
+}

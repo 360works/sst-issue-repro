@@ -1,0 +1,13 @@
+{
+  "name": "@sst-issue-repro/scripts",
+  "version": "0.0.0",
+  "dependencies": {
+    "@sst-issue-repro/core": "*"
+  },
+  "scripts": {
+    "shell": "sst shell tsx"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.2"
+  }
+}
